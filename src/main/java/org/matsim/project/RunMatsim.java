@@ -45,8 +45,9 @@ public class RunMatsim{
 		// ---
 		
 		Controler controler = new Controler( scenario ) ;
-		
-		// possibly modify controler here
+
+		//	possibly	modify	controler	here
+		controler.addControlerListener(new	MyControlerListener());
 
 //		controler.addOverridingModule( new OTFVisLiveModule() ) ;
 		
