@@ -1,0 +1,28 @@
+<?xml version="1.0" ?>
+<!DOCTYPE plans SYSTEM "http://www.matsim.org/files/dtd/plans_v4.dtd">
+<plans xml:lang="de-CH">
+
+	<person id="1">
+		<plan>
+			<act type="h" x="1366533.3480765193" y="6678121.425384228" end_time="06:00:00" />
+			<leg mode="car">
+			</leg>
+			<act type="w" x="1378533.3480765193" y="6681121.425384228" dur="08:30:00" />
+			<leg mode="car">
+			</leg>
+			<act type="h" x="1366533.3480765193" y="6678121.425384228" />
+		</plan>
+	</person>
+	<person id="2">
+		<plan>
+			<act type="h" x="1375348.92" y="6687637.95" end_time="06:30:00" />
+			<leg mode="car">
+			</leg>
+			<act type="w" x="1378533.3480765193" y="6681121.425384228" dur="08:30:00" />
+			<leg mode="car">
+			</leg>
+			<act type="h" x="1375348.92" y="6687637.95" />
+		</plan>
+	</person>
+
+</plans>
