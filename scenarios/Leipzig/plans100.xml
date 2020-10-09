@@ -24,5 +24,93 @@
 			<act type="h" x="1375348.92" y="6687637.95" />
 		</plan>
 	</person>
+	<person id="3">
+		<plan>
+			<act type="h" x="1378348.92" y="6682637.95" end_time="06:45:00" />
+			<leg mode="car">
+			</leg>
+			<act type="w" x="1378533.3480765193" y="6681121.425384228" dur="08:15:00" />
+			<leg mode="car">
+			</leg>
+			<act type="h" x="1378348.92" y="6682637.95" />
+		</plan>
+	</person>
+	<person id="4">
+		<plan>
+			<act type="h" x="1375948.92" y="6686637.95" end_time="06:30:00" />
+			<leg mode="car">
+			</leg>
+			<act type="w" x="1378433.3480765193" y="6682121.425384228" dur="08:30:00" />
+			<leg mode="car">
+			</leg>
+			<act type="h" x="1375948.92" y="6686637.95" />
+		</plan>
+	</person>
+	<person id="5">
+		<plan>
+			<act type="h" x="1378248.92" y="6687637.95" end_time="06:30:00" />
+			<leg mode="car">
+			</leg>
+			<act type="w" x="1371533.3480765193" y="6685121.425384228" dur="08:30:00" />
+			<leg mode="car">
+			</leg>
+			<act type="h" x="1378248.92" y="6687637.95" />
+		</plan>
+	</person>
+	<person id="6">
+		<plan>
+			<act type="h" x="1371348.92" y="6689637.95" end_time="06:30:00" />
+			<leg mode="car">
+			</leg>
+			<act type="w" x="1377533.3480765193" y="6682121.425384228" dur="08:30:00" />
+			<leg mode="car">
+			</leg>
+			<act type="h" x="1371348.92" y="6689637.95" />
+		</plan>
+	</person>
+	<person id="7">
+		<plan>
+			<act type="h" x="1372948.92" y="6682837.95" end_time="06:30:00" />
+			<leg mode="car">
+			</leg>
+			<act type="w" x="1378533.3480765193" y="6681121.425384228" dur="08:30:00" />
+			<leg mode="car">
+			</leg>
+			<act type="h" x="1372948.92" y="6682837.95" />
+		</plan>
+	</person>
+	<person id="8">
+		<plan>
+			<act type="h" x="1365348.92" y="6679637.95" end_time="06:30:00" />
+			<leg mode="car">
+			</leg>
+			<act type="w" x="1372533.3480765193" y="6689121.425384228" dur="08:30:00" />
+			<leg mode="car">
+			</leg>
+			<act type="h" x="1365348.92" y="6679637.95" />
+		</plan>
+	</person>
+	<person id="9">
+		<plan>
+			<act type="h" x="1375948.92" y="6682637.95" end_time="06:30:00" />
+			<leg mode="car">
+			</leg>
+			<act type="w" x="1382533.3480765193" y="6679121.425384228" dur="07:30:00" />
+			<leg mode="car">
+			</leg>
+			<act type="h" x="1375948.92" y="6682637.95" />
+		</plan>
+	</person>
+	<person id="10">
+		<plan>
+			<act type="h" x="1372348.92" y="6681637.95" end_time="07:00:00" />
+			<leg mode="car">
+			</leg>
+			<act type="w" x="1378533.3480765193" y="6681121.425384228" dur="08:30:00" />
+			<leg mode="car">
+			</leg>
+			<act type="h" x="1372348.92" y="6681637.95" />
+		</plan>
+	</person>
 
 </plans>
