@@ -1,8 +1,12 @@
 from xml.etree.ElementTree import Element, SubElement, Comment, tostring
 
 
-def add_action(x, y, action_type, mode):
+class PlansElementTree:
     pass
+
+
+def add_action(parent, action, x_coordinate, y_coordinate, action_type, mode):
+    return action
 
 
 def add_person(person_id, action_type, home_x, home_y, work_x, work_y, mode):
@@ -14,15 +18,18 @@ def add_person(person_id, action_type, home_x, home_y, work_x, work_y, mode):
     action.set('type', action_type)
     action.set('x', home_x)
     action.set('y', home_y)
-    action.set('end_time', '06:00:00')
+    action.set('end_time', kwargs['leaving_home_time'])
     leg = SubElement(plan, 'leg')
-    leg.set('mode', mode)
+    leg.set('mode', transportation_mode)
 
 
 # create the file structure
 plans = Element('plans')
 plans.set('xml:lang', 'de-CH')
-add_person(person_id='1', action_type='h', mode='car', home_x='1366533.3480765193', home_y='6678121.425384228')
+
+for x in range(10):
+    add_person(person_id=str(x), action_type='h', transportation_mode='car', home_x='1366533.3480765193',
+               home_y='6678121.425384228', leaving_home_time='08:00:00')
 
 # create a new XML file with the results
 plans = tostring(plans, encoding='utf8', method='xml').decode()
