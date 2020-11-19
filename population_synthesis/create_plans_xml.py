@@ -9,7 +9,7 @@ def add_action(parent, action, x_coordinate, y_coordinate, action_type, mode):
     return action
 
 
-def add_person(person_id, action_type, home_x, home_y, work_x, work_y, mode):
+def add_person(person_id, action_type, home_x, home_y, transportation_mode, **kwargs):
     global plans
     person = SubElement(plans, 'person')
     person.set('id', person_id)
@@ -32,7 +32,7 @@ for x in range(10):
                home_y='6678121.425384228', leaving_home_time='08:00:00')
 
 # create a new XML file with the results
-plans = tostring(plans, encoding='utf8', method='xml').decode()
+plans = tostring(plans, method='xml').decode()
 plans_file = open("plans100.xml", "w")
 plans_file.write(plans)
 plans_file.close()
