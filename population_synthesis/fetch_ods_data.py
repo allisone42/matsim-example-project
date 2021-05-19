@@ -3,12 +3,6 @@ import ezodf
 
 doc = ezodf.opendoc('Bevölkerung_2019_Zentroidkoordinaten.ods')
 
-print("Spreadsheet contains %d sheet(s)." % len(doc.sheets))
-for sheet in doc.sheets:
-    print("-"*40)
-    print("   Sheet name : '%s'" % sheet.name)
-    print("Size of Sheet : (rows=%d, cols=%d)" % (sheet.nrows(), sheet.ncols()))
-
 # convert the first sheet to a pandas.DataFrame
 sheet = doc.sheets[0]
 df_dict = {}
@@ -27,4 +21,12 @@ for i, row in enumerate(sheet.rows()):
         df_dict[col_index[j]].append(cell.value)
 # and convert to a DataFrame
 df = pd.DataFrame(df_dict)
-print(df.iloc[0][2])
+
+
+def get_district_coordinate(district):
+    x_coord_column = 2
+    y_coord_column = 3
+    row = district
+    x = df.iloc[row, x_coord_column]
+    y = df.iloc[row, y_coord_column]
+    return [x, y]

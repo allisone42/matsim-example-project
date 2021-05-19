@@ -4,7 +4,7 @@
 
     <module name="global">
         <param name="randomSeed" value="4711" />
-        <param name="coordinateSystem" value="Mercator" />
+        <param name="coordinateSystem" value="WG84_UTM3N" />
     </module>
 
     <module name="network">
@@ -16,7 +16,7 @@
     </module>
 
     <module name="controler">
-        <param name="outputDirectory" value="./output05" />
+        <param name="outputDirectory" value="./output07" />
         <param name="firstIteration" value="0" />
         <param name="lastIteration" value="2" /> <!-- changed from 10 to 2 -->
     </module>

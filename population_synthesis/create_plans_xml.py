@@ -1,8 +1,14 @@
 from xml.etree.ElementTree import Element, SubElement, Comment, tostring
+from fetch_ods_data import get_district_coordinate
 
 
 class PlansElementTree:
     pass
+
+
+def get_coordinate():
+    coordinate = get_district_coordinate(0)
+    return coordinate
 
 
 def add_action(parent, action, x_coordinate, y_coordinate, action_type, mode):
@@ -36,3 +42,5 @@ plans = tostring(plans, method='xml').decode()
 plans_file = open("plans100.xml", "w")
 plans_file.write(plans)
 plans_file.close()
+c = get_coordinate()
+print(c)
