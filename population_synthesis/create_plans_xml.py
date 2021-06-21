@@ -6,9 +6,10 @@ class PlansElementTree:
     pass
 
 
-def get_coordinate():
-    coordinate = get_district_coordinate(0)
-    return coordinate
+def get_home_coordinate(district_id):
+    home_coordinate = get_district_coordinate(district_id)
+    # add random distribution in districts
+    return home_coordinate
 
 
 def add_action(parent, action, x_coordinate, y_coordinate, action_type, mode):
@@ -33,14 +34,13 @@ def add_person(person_id, action_type, home_x, home_y, transportation_mode, **kw
 plans = Element('plans')
 plans.set('xml:lang', 'de-CH')
 
-for x in range(10):
-    add_person(person_id=str(x), action_type='h', transportation_mode='car', home_x='1366533.3480765193',
-               home_y='6678121.425384228', leaving_home_time='08:00:00')
+for x in range(63):
+    home_coordinate = get_home_coordinate(x)
+    add_person(person_id=str(x), action_type='h', transportation_mode='car', home_x=str(home_coordinate[0]),
+               home_y=str(home_coordinate[1]), leaving_home_time='08:00:00')
 
 # create a new XML file with the results
 plans = tostring(plans, method='xml').decode()
 plans_file = open("plans100.xml", "w")
 plans_file.write(plans)
 plans_file.close()
-c = get_coordinate()
-print(c)
